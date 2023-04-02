@@ -1,14 +1,18 @@
 <script setup>
 definePageMeta({
-  middleware: function (to, from) {
-    const isAuthenticated = useCookie('is-authenticated')
-    const currentUser = useCookie('current-user')
+  middleware: [
+    'logout',
+    function (to, from) {
+      console.log('--- Inline Logout Middleware ---')
+      const isAuthenticated = useCookie('is-authenticated')
+      const currentUser = useCookie('current-user')
 
-    isAuthenticated.value = ''
-    currentUser.value = ''
+      isAuthenticated.value = ''
+      currentUser.value = ''
 
-    return navigateTo('/')
-  }
+      return navigateTo('/')
+    }
+  ]
 })
 </script>
 
