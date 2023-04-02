@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 const isAuthenticated = useCookie('is-authenticated')
 const currentUser = useCookie('current-user')
 
