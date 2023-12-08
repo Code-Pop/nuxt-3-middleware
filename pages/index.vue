@@ -23,7 +23,7 @@ const currentUser = useCookie('current-user')
           <nuxt-link to="/login">Login</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/profile/"> Current User </nuxt-link>
+          <nuxt-link to="/profile/">Current User</nuxt-link>
         </li>
         <li>
           <nuxt-link to="/profile/undefined-user">
