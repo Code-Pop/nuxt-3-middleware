@@ -32,3 +32,5 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+This repository is for learning purposes only, it's not for production use.
